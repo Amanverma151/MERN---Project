@@ -9,13 +9,7 @@ const cors = require("cors");
 
 app.use(express.json());
 
-app.use(cors(
-  {
-    origin:[],
-    methods:["POST","GET"],
-    credentials:true
-  }
-  ));
+app.use(cors());
 
 // Database Connection With MongoDB
 mongoose.connect(
